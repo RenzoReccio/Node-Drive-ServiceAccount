@@ -1,0 +1,14 @@
+{
+  "name": "node-drive-serviceaccount",
+  "version": "1.0.0",
+  "description": "Node integration with google apis",
+  "main": "drive.js",
+  "scripts": {
+    "start": "node drive.js"
+  },
+  "author": "Renzo",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^59.0.0"
+  }
+}
