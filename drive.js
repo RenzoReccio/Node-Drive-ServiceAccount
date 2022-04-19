@@ -9,7 +9,7 @@ const scopes = [
 ];
 
 
-var saveFileToDrive = (fileName) => {
+var saveFileToDrive = (filePath, fileName) => {
 
     const auth = new google.auth.JWT(
         credentials.client_email, null,
@@ -38,7 +38,7 @@ var saveFileToDrive = (fileName) => {
     */
     var media = {
         mimeType: 'application/pdf',
-        body: fs.createReadStream("PATH_TO_THE_FILE")
+        body: fs.createReadStream(filePath)
     };
 
     drive.files.create({
